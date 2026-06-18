@@ -10,11 +10,11 @@ import { isActionableTitle } from '../util/filters.js';
 import { isNotExpired } from '../util/dates.js';
 
 const SOURCES = [
-  // alio는 키워드 필터가 없어 최근 공고만 반환 → 페이지를 넓게 잡아 적합 건 포착 확률을 높임.
-  { name: 'alio', fn: () => collectAlio({ pages: 8 }) },
-  { name: 'g2b', fn: collectG2b },
-  { name: 'kstartup', fn: collectKstartup },
-  { name: 'kocca', fn: () => collectKocca({ pages: 3 }) },
+  // 각 소스에서 페이지를 끝까지(또는 넉넉히) 긁어 XR 적합 건 포착량을 극대화.
+  { name: 'alio', fn: () => collectAlio({ pages: 25 }) },
+  { name: 'g2b', fn: () => collectG2b({ maxPages: 8 }) },
+  { name: 'kstartup', fn: () => collectKstartup({ maxPages: 5 }) },
+  { name: 'kocca', fn: () => collectKocca({ pages: 20 }) },
 ];
 
 const UPSERT_SQL = `

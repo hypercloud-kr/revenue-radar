@@ -1,0 +1,99 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Revenue Radar" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img [ref=e7]
+          - generic [ref=e10]: Revenue Radar
+        - link "대시보드 시작하기" [ref=e11] [cursor=pointer]:
+          - /url: /dashboard
+    - main [ref=e12]:
+      - generic [ref=e15]:
+        - heading "흩어진 공공 공고를 BD가 바로 실행할 수 있는 제안 패키지로 바꿉니다" [level=1] [ref=e16]:
+          - text: 흩어진 공공 공고를 BD가 바로 실행할 수 있는
+          - text: 제안 패키지로 바꿉니다
+        - paragraph [ref=e17]: 나라장터·K-Startup·알리오 등 다양한 소스의 공고를 실시간으로 수집하고, 자사 솔루션과의 적합성을 분석하여 제안 초안까지 자동으로 작성합니다.
+        - generic [ref=e18]:
+          - link "대시보드 시작하기" [ref=e19] [cursor=pointer]:
+            - /url: /dashboard
+            - text: 대시보드 시작하기
+            - img [ref=e20]
+          - link "공고 인박스 보기" [ref=e22] [cursor=pointer]:
+            - /url: /inbox
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - heading "단 한 번의 도입으로 달라지는 속도" [level=2] [ref=e26]
+          - paragraph [ref=e27]: 단순 반복 작업에 쏟던 시간을 고객과의 대화에 투자하세요.
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]:
+              - img [ref=e31]
+              - text: 기존 방식
+            - generic [ref=e34]: 수작업 검토 및 초안 작성
+            - generic [ref=e35]: 약 4시간
+          - img [ref=e37]
+          - generic [ref=e39]:
+            - img [ref=e41]
+            - generic [ref=e43]:
+              - img [ref=e44]
+              - text: Revenue Radar
+            - generic [ref=e47]: AI 자동 검토 및 패키징
+            - generic [ref=e48]: 약 수십 초
+      - generic [ref=e50]:
+        - heading "이렇게 동작합니다" [level=2] [ref=e51]
+        - generic [ref=e52]:
+          - generic [ref=e54]:
+            - img [ref=e56]
+            - generic [ref=e59]:
+              - heading "1. 멀티소스 자동 수집" [level=3] [ref=e60]
+              - paragraph [ref=e61]: 나라장터, K-Startup, 알리오 등 흩어진 공공 공고를 실시간으로 모니터링하고 수집합니다.
+          - generic [ref=e62]:
+            - img [ref=e64]
+            - generic [ref=e68]:
+              - heading "2. 적합성 자동 판단" [level=3] [ref=e69]
+              - paragraph [ref=e70]: HyperCloud 솔루션과의 핏을 분석하여 한눈에 파악할 수 있도록 점수화합니다.
+              - generic [ref=e71]:
+                - generic [ref=e72]: Go
+                - generic [ref=e73]: Watch
+                - generic [ref=e74]: No-go
+          - generic [ref=e75]:
+            - img [ref=e77]
+            - generic [ref=e79]:
+              - heading "3. 제안 패키지 자동 생성" [level=3] [ref=e80]
+              - paragraph [ref=e81]: 영업팀이 바로 활용할 수 있는 제안서 초안, Slack 공유 메시지, 이메일 문구를 생성합니다.
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - heading "왜 단순 AI 래퍼가 아닌가" [level=2] [ref=e86]
+          - generic [ref=e87]:
+            - generic [ref=e88]:
+              - img [ref=e90]
+              - generic [ref=e93]:
+                - heading "원문 근거(Evidence) 인용" [level=4] [ref=e94]
+                - paragraph [ref=e95]: 모든 판단과 분석은 공고 원문의 명확한 근거를 바탕으로 이루어지며, 사용자가 언제든 원본을 교차 검증할 수 있습니다.
+            - generic [ref=e96]:
+              - img [ref=e98]
+              - generic [ref=e102]:
+                - heading "다차원 스코어링 시스템" [level=4] [ref=e103]
+                - paragraph [ref=e104]: 단순 요약이 아닌 적합도, 시급성, 리스크를 종합적으로 정량화하여 BD 팀의 객관적인 의사결정을 돕습니다.
+            - generic [ref=e105]:
+              - img [ref=e107]
+              - generic [ref=e110]:
+                - heading "팩트 기반 프롬프팅" [level=4] [ref=e111]
+                - paragraph [ref=e112]: 환각 현상(Hallucination)을 원천 차단하기 위해 엄격하게 통제된 B2B 전용 프롬프트 체인만을 사용합니다.
+        - img [ref=e116]
+      - generic [ref=e120]:
+        - heading "준비된 제안 패키지로 비즈니스 기회를 선점하세요" [level=2] [ref=e121]
+        - paragraph [ref=e122]: 더 이상 흩어진 공고를 찾고 요약하는 데 시간을 낭비하지 마세요.
+        - link "대시보드 시작하기" [ref=e123] [cursor=pointer]:
+          - /url: /dashboard
+          - text: 대시보드 시작하기
+          - img [ref=e124]
+    - contentinfo [ref=e126]:
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - img [ref=e129]
+          - text: Revenue Radar
+        - paragraph [ref=e132]: BD 팀을 위한 인공지능 공공 공고 분석 및 제안 솔루션
+  - region "Notifications (F8)":
+    - list

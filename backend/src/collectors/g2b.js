@@ -14,7 +14,7 @@ function ymd(date) {
   return fmt.format(date).replace(/-/g, ''); // YYYYMMDD
 }
 
-export async function collectG2b() {
+export async function collectG2b({ maxPages = 8, numOfRows = 999 } = {}) {
   const key = process.env.DATA_GO_KR_API_KEY;
   if (!key) return []; // 키 없으면 조용히 빈 결과(alio가 안전망)
 
@@ -23,39 +23,47 @@ export async function collectG2b() {
   const inqryBgnDt = `${ymd(begin)}0000`;
   const inqryEndDt = `${ymd(now)}2359`;
 
-  // §4-5: Decoding Key를 URLSearchParams로 정확히 1회 인코딩.
-  const params = new URLSearchParams({
-    serviceKey: key,
-    type: 'json',
-    inqryDiv: '1',
-    pageNo: '1',
-    numOfRows: '999',
-    inqryBgnDt,
-    inqryEndDt,
-  });
+  const out = [];
+  for (let pageNo = 1; pageNo <= maxPages; pageNo++) {
+    // §4-5: Decoding Key를 URLSearchParams로 정확히 1회 인코딩.
+    const params = new URLSearchParams({
+      serviceKey: key,
+      type: 'json',
+      inqryDiv: '1',
+      pageNo: String(pageNo),
+      numOfRows: String(numOfRows),
+      inqryBgnDt,
+      inqryEndDt,
+    });
 
-  const res = await fetch(`${BASE}?${params.toString()}`, {
-    headers: { Accept: 'application/json' },
-  });
-  if (!res.ok) throw new Error(`g2b HTTP ${res.status}`);
-  const json = await res.json();
+    const res = await fetch(`${BASE}?${params.toString()}`, {
+      headers: { Accept: 'application/json' },
+    });
+    if (!res.ok) throw new Error(`g2b HTTP ${res.status}`);
+    const json = await res.json();
 
-  const items = json?.response?.body?.items;
-  const list = Array.isArray(items) ? items : items ? [items].flat() : [];
+    const items = json?.response?.body?.items;
+    const list = Array.isArray(items) ? items : items ? [items].flat() : [];
+    if (!list.length) break;
 
-  return list
-    .filter(Boolean)
-    .map((r) => ({
-      id: `g2b:${r.bidNtceNo}`,
-      title: (r.bidNtceNm || '').trim(),
-      institution: r.ntceInsttNm ?? null,
-      sourceCode: 'g2b',
-      sourceName: 'g2b(나라장터)',
-      sourceUrl: r.bidNtceDtlUrl || 'https://www.g2b.go.kr/',
-      deadline: normalizeDate((r.bidClseDt || '').slice(0, 10)),
-      budget: r.asignBdgtAmt ? `KRW ${r.asignBdgtAmt}` : null,
-      region: r.rgnLmtYn === 'Y' ? r.prtcptPsblRgnNm ?? null : null,
-      summary: r.bidNtceNm ?? null,
-    }))
-    .filter((o) => o.id && o.title);
+    for (const r of list.filter(Boolean)) {
+      out.push({
+        id: `g2b:${r.bidNtceNo}`,
+        title: (r.bidNtceNm || '').trim(),
+        institution: r.ntceInsttNm ?? null,
+        sourceCode: 'g2b',
+        sourceName: 'g2b(나라장터)',
+        sourceUrl: r.bidNtceDtlUrl || 'https://www.g2b.go.kr/',
+        deadline: normalizeDate((r.bidClseDt || '').slice(0, 10)),
+        budget: r.asignBdgtAmt ? `KRW ${r.asignBdgtAmt}` : null,
+        region: r.rgnLmtYn === 'Y' ? r.prtcptPsblRgnNm ?? null : null,
+        summary: r.bidNtceNm ?? null,
+      });
+    }
+
+    const totalCount = Number(json?.response?.body?.totalCount || 0);
+    if (pageNo * numOfRows >= totalCount) break; // 마지막 페이지
+  }
+
+  return out.filter((o) => o.id && o.title);
 }

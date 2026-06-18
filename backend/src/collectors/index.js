@@ -4,6 +4,7 @@ import { query } from '../db.js';
 import { collectAlio } from './alio.js';
 import { collectG2b } from './g2b.js';
 import { collectKstartup } from './kstartup.js';
+import { collectKocca } from './kocca.js';
 import { scoreOpportunity } from '../services/scoring.js';
 import { isActionableTitle } from '../util/filters.js';
 import { isNotExpired } from '../util/dates.js';
@@ -13,6 +14,7 @@ const SOURCES = [
   { name: 'alio', fn: () => collectAlio({ pages: 8 }) },
   { name: 'g2b', fn: collectG2b },
   { name: 'kstartup', fn: collectKstartup },
+  { name: 'kocca', fn: () => collectKocca({ pages: 3 }) },
 ];
 
 const UPSERT_SQL = `

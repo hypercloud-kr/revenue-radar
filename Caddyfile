@@ -1,0 +1,5 @@
+# Caddy 리버스 프록시 — <ip-dash>.nip.io 도메인이면 무료 자동 HTTPS(§4-8, §6).
+# SITE_ADDRESS 예: 13-125-1-2.nip.io
+{$SITE_ADDRESS} {
+	reverse_proxy backend:8080
+}

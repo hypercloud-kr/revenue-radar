@@ -1,0 +1,20 @@
+{
+  "name": "revenue-radar-backend",
+  "version": "1.0.0",
+  "description": "Revenue Radar — 공공 공고 수집·판단·제안서 생성 백엔드",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}

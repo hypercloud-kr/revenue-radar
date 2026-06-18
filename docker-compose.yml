@@ -1,0 +1,41 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-radar}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-radar}
+      POSTGRES_DB: ${POSTGRES_DB:-radar}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # 초기화 시 스키마+seed 자동 실행(§1). named volume이라 재시작에도 유지(§4-14).
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U ${POSTGRES_USER:-radar} -d ${POSTGRES_DB:-radar}']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    ports:
+      - '5433:5432'
+
+  backend:
+    build: ./backend
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PORT: 8080
+      PGHOST: db
+      PGPORT: 5432
+      POSTGRES_USER: ${POSTGRES_USER:-radar}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-radar}
+      POSTGRES_DB: ${POSTGRES_DB:-radar}
+      CORS_ORIGIN: ${CORS_ORIGIN:-*}
+      PROPOSAL_MODEL: ${PROPOSAL_MODEL:-claude-sonnet-4-6}
+      DATA_GO_KR_API_KEY: ${DATA_GO_KR_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      KOCCA_API_KEY: ${KOCCA_API_KEY:-}
+    ports:
+      - '8081:8080'
+
+volumes:
+  pgdata:

@@ -1,0 +1,67 @@
+name: deploy
+
+# §6.5: 배포 브랜치 push → EC2에 .env 주입 + rsync 동기화 + compose up + /health 스모크
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H "${{ secrets.EC2_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Create .env on EC2 (Secrets → EC2 .env)
+        env:
+          EC2_USER: ${{ secrets.EC2_USER }}
+          EC2_HOST: ${{ secrets.EC2_HOST }}
+        run: |
+          ssh -i ~/.ssh/id_ed25519 "$EC2_USER@$EC2_HOST" "mkdir -p ~/revenue-radar"
+          cat > /tmp/.env <<EOF
+          POSTGRES_USER=radar
+          POSTGRES_DB=radar
+          POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
+          CORS_ORIGIN=${{ secrets.CORS_ORIGIN }}
+          PROPOSAL_MODEL=${{ secrets.PROPOSAL_MODEL }}
+          ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
+          DATA_GO_KR_API_KEY=${{ secrets.DATA_GO_KR_API_KEY }}
+          KOCCA_API_KEY=${{ secrets.KOCCA_API_KEY }}
+          SITE_ADDRESS=${{ secrets.SITE_ADDRESS }}
+          EOF
+          scp -i ~/.ssh/id_ed25519 /tmp/.env "$EC2_USER@$EC2_HOST:~/revenue-radar/.env"
+
+      - name: Sync code (rsync over SSH, private repo 안전)
+        env:
+          EC2_USER: ${{ secrets.EC2_USER }}
+          EC2_HOST: ${{ secrets.EC2_HOST }}
+        run: |
+          rsync -az --delete \
+            --exclude '.git' --exclude 'node_modules' --exclude '.env' \
+            -e "ssh -i ~/.ssh/id_ed25519" \
+            ./ "$EC2_USER@$EC2_HOST:~/revenue-radar/"
+
+      - name: Compose up + smoke test
+        env:
+          EC2_USER: ${{ secrets.EC2_USER }}
+          EC2_HOST: ${{ secrets.EC2_HOST }}
+          SITE_ADDRESS: ${{ secrets.SITE_ADDRESS }}
+        run: |
+          ssh -i ~/.ssh/id_ed25519 "$EC2_USER@$EC2_HOST" "cd ~/revenue-radar && \
+            docker compose -f docker-compose.prod.yml up -d --build"
+          echo "Waiting for service..."
+          for i in $(seq 1 12); do
+            if curl -fsS "https://$SITE_ADDRESS/health" | grep -q '"status":"ok"'; then
+              echo "Health OK"; exit 0
+            fi
+            sleep 5
+          done
+          echo "Health check failed"; exit 1

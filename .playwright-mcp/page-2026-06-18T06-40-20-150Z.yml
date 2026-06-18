@@ -1,0 +1,366 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Revenue Radar" [ref=e6]
+        - generic [ref=e7]: Revenue Radar
+      - navigation [ref=e8]:
+        - link "대시보드" [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e10]
+          - text: 대시보드
+        - link "인박스" [ref=e15] [cursor=pointer]:
+          - /url: /inbox
+          - img [ref=e16]
+          - text: 인박스
+      - generic [ref=e19]:
+        - generic [ref=e20]: System Status
+        - generic [ref=e21]: 실제 API 연결됨
+    - generic [ref=e25]:
+      - banner [ref=e26]:
+        - heading "흩어진 공공 공고를 BD가 바로 실행할 수 있는 제안 패키지로 바꿉니다" [level=1] [ref=e28]
+      - main [ref=e29]:
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - heading "인박스" [level=2] [ref=e34]
+              - paragraph [ref=e35]: 모든 수집된 공고를 우선순위(적합도) 순으로 검토하세요.
+            - generic [ref=e37]:
+              - img [ref=e38]
+              - searchbox "공고명, 기관 검색..." [ref=e41]
+          - generic [ref=e42]:
+            - generic [ref=e43]:
+              - img [ref=e44]
+              - text: "필터:"
+            - generic [ref=e46]:
+              - button "●전체" [ref=e47]
+              - button "●Go" [active] [ref=e48]
+              - button "●Watch" [ref=e49]
+              - button "●No-go" [ref=e50]
+          - generic [ref=e52]:
+            - link "Go g2b(나라장터) 국방부 국군재정관리단 (26F130-A) XR기반 실감형 콘텐츠 제작 용역 (26F130-A) XR기반 실감형 콘텐츠 제작 용역 적합도 100 예산 KRW 138399000 D-Day" [ref=e652] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01548238
+              - generic [ref=e654]: Go
+              - generic [ref=e655]:
+                - generic [ref=e656]:
+                  - generic [ref=e657]: g2b(나라장터)
+                  - generic [ref=e658]: 국방부 국군재정관리단
+                - heading "(26F130-A) XR기반 실감형 콘텐츠 제작 용역" [level=4] [ref=e659]
+                - paragraph [ref=e660]: (26F130-A) XR기반 실감형 콘텐츠 제작 용역
+              - generic [ref=e661]:
+                - generic [ref=e662]:
+                  - generic [ref=e663]:
+                    - generic [ref=e664]: 적합도
+                    - generic [ref=e665]: "100"
+                  - generic [ref=e666]:
+                    - generic [ref=e667]: 예산
+                    - generic [ref=e668]: KRW 138399000
+                - generic [ref=e669]: D-Day
+            - link "Go g2b(나라장터) 경상북도문화관광공사 2026 경북 메타버스 XR 체험존 운영 용역 2026 경북 메타버스 XR 체험존 운영 용역 적합도 76 예산 KRW 92500000 미정" [ref=e670] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01543110
+              - generic [ref=e672]: Go
+              - generic [ref=e673]:
+                - generic [ref=e674]:
+                  - generic [ref=e675]: g2b(나라장터)
+                  - generic [ref=e676]: 경상북도문화관광공사
+                - heading "2026 경북 메타버스 XR 체험존 운영 용역" [level=4] [ref=e677]
+                - paragraph [ref=e678]: 2026 경북 메타버스 XR 체험존 운영 용역
+              - generic [ref=e679]:
+                - generic [ref=e680]:
+                  - generic [ref=e681]:
+                    - generic [ref=e682]: 적합도
+                    - generic [ref=e683]: "76"
+                  - generic [ref=e684]:
+                    - generic [ref=e685]: 예산
+                    - generic [ref=e686]: KRW 92500000
+                - generic [ref=e687]: 미정
+            - link "Go g2b(나라장터) (사)한국방사선진흥협회 방사선 측정 교육 가상환경 구축을 위한 3D 모델링 기반 VR 교육 콘텐츠 2종 제작 방사선 측정 교육 가상환경 구축을 위한 3D 모델링 기반 VR 교육 콘텐츠 2종 제작 적합도 58 예산 KRW 150000000 미정" [ref=e688] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01552406
+              - generic [ref=e690]: Go
+              - generic [ref=e691]:
+                - generic [ref=e692]:
+                  - generic [ref=e693]: g2b(나라장터)
+                  - generic [ref=e694]: (사)한국방사선진흥협회
+                - heading "방사선 측정 교육 가상환경 구축을 위한 3D 모델링 기반 VR 교육 콘텐츠 2종 제작" [level=4] [ref=e695]
+                - paragraph [ref=e696]: 방사선 측정 교육 가상환경 구축을 위한 3D 모델링 기반 VR 교육 콘텐츠 2종 제작
+              - generic [ref=e697]:
+                - generic [ref=e698]:
+                  - generic [ref=e699]:
+                    - generic [ref=e700]: 적합도
+                    - generic [ref=e701]: "58"
+                  - generic [ref=e702]:
+                    - generic [ref=e703]: 예산
+                    - generic [ref=e704]: KRW 150000000
+                - generic [ref=e705]: 미정
+            - link "Go g2b(나라장터) 재단법인 포항소재산업진흥원 디지털트윈 시범구역 조성사업(농어촌형)을 위한 해안침식 시계열 누적 데이터 구축 및 트윈모델 현행화 용역 디지털트윈 시범구역 조성사업(농어촌형)을 위한 해안침식 시계열 누적 데이터 구축 및 트윈모델 현행화 용역 적합도 38 예산 KRW 80000000 D-4" [ref=e706] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01557640
+              - generic [ref=e708]: Go
+              - generic [ref=e709]:
+                - generic [ref=e710]:
+                  - generic [ref=e711]: g2b(나라장터)
+                  - generic [ref=e712]: 재단법인 포항소재산업진흥원
+                - heading "디지털트윈 시범구역 조성사업(농어촌형)을 위한 해안침식 시계열 누적 데이터 구축 및 트윈모델 현행화 용역" [level=4] [ref=e713]
+                - paragraph [ref=e714]: 디지털트윈 시범구역 조성사업(농어촌형)을 위한 해안침식 시계열 누적 데이터 구축 및 트윈모델 현행화 용역
+              - generic [ref=e715]:
+                - generic [ref=e716]:
+                  - generic [ref=e717]:
+                    - generic [ref=e718]: 적합도
+                    - generic [ref=e719]: "38"
+                  - generic [ref=e720]:
+                    - generic [ref=e721]: 예산
+                    - generic [ref=e722]: KRW 80000000
+                - generic [ref=e723]: D-4
+            - link "Go g2b(나라장터) 조달청 항공 및 제조 산업 XR 협업 훈련 콘텐츠 제작 항공 및 제조 산업 XR 협업 훈련 콘텐츠 제작 적합도 38 예산 KRW 302590000 D-8" [ref=e724] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01554876
+              - generic [ref=e726]: Go
+              - generic [ref=e727]:
+                - generic [ref=e728]:
+                  - generic [ref=e729]: g2b(나라장터)
+                  - generic [ref=e730]: 조달청
+                - heading "항공 및 제조 산업 XR 협업 훈련 콘텐츠 제작" [level=4] [ref=e731]
+                - paragraph [ref=e732]: 항공 및 제조 산업 XR 협업 훈련 콘텐츠 제작
+              - generic [ref=e733]:
+                - generic [ref=e734]:
+                  - generic [ref=e735]:
+                    - generic [ref=e736]: 적합도
+                    - generic [ref=e737]: "38"
+                  - generic [ref=e738]:
+                    - generic [ref=e739]: 예산
+                    - generic [ref=e740]: KRW 302590000
+                - generic [ref=e741]: D-8
+            - link "Go K-Startup 공공기관 한국전자전 서울XR 테마관 참여기업 모집 서울경제진흥원은 DMC 전략산업(XR)분야 활성화를 위하여 한국전자전(KES)내 XR 테마관 전시부스를 운영 및 기업홍보를 지원하고자 하오니, 관심기업의 많은 참여 바랍니다. 적합도 38 예산 미정 D-11" [ref=e742] [cursor=pointer]:
+              - /url: /opportunities/kstartup:178174
+              - generic [ref=e744]: Go
+              - generic [ref=e745]:
+                - generic [ref=e746]:
+                  - generic [ref=e747]: K-Startup
+                  - generic [ref=e748]: 공공기관
+                - heading "한국전자전 서울XR 테마관 참여기업 모집" [level=4] [ref=e749]
+                - paragraph [ref=e750]: 서울경제진흥원은 DMC 전략산업(XR)분야 활성화를 위하여 한국전자전(KES)내 XR 테마관 전시부스를 운영 및 기업홍보를 지원하고자 하오니, 관심기업의 많은 참여 바랍니다.
+              - generic [ref=e751]:
+                - generic [ref=e752]:
+                  - generic [ref=e753]:
+                    - generic [ref=e754]: 적합도
+                    - generic [ref=e755]: "38"
+                  - generic [ref=e756]:
+                    - generic [ref=e757]: 예산
+                    - generic [ref=e758]: 미정
+                - generic [ref=e759]: D-11
+            - link "Go alio(공공기관) 국립항공박물관 국립항공박물관 패러글라이딩 VR 체험기구 제작 국립항공박물관 패러글라이딩 VR 체험기구 제작 적합도 38 예산 미정 D-11" [ref=e760] [cursor=pointer]:
+              - /url: /opportunities/alio:3546635
+              - generic [ref=e762]: Go
+              - generic [ref=e763]:
+                - generic [ref=e764]:
+                  - generic [ref=e765]: alio(공공기관)
+                  - generic [ref=e766]: 국립항공박물관
+                - heading "국립항공박물관 패러글라이딩 VR 체험기구 제작" [level=4] [ref=e767]
+                - paragraph [ref=e768]: 국립항공박물관 패러글라이딩 VR 체험기구 제작
+              - generic [ref=e769]:
+                - generic [ref=e770]:
+                  - generic [ref=e771]:
+                    - generic [ref=e772]: 적합도
+                    - generic [ref=e773]: "38"
+                  - generic [ref=e774]:
+                    - generic [ref=e775]: 예산
+                    - generic [ref=e776]: 미정
+                - generic [ref=e777]: D-11
+            - link "Go g2b(나라장터) 대구대학교 산학협력단 2026년 몰입형-피지컬AI 교육과정(피지컬LLM프로젝트) 운영 용역 2026년 몰입형-피지컬AI 교육과정(피지컬LLM프로젝트) 운영 용역 적합도 38 예산 KRW 60000000 미정" [ref=e778] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01560526
+              - generic [ref=e780]: Go
+              - generic [ref=e781]:
+                - generic [ref=e782]:
+                  - generic [ref=e783]: g2b(나라장터)
+                  - generic [ref=e784]: 대구대학교 산학협력단
+                - heading "2026년 몰입형-피지컬AI 교육과정(피지컬LLM프로젝트) 운영 용역" [level=4] [ref=e785]
+                - paragraph [ref=e786]: 2026년 몰입형-피지컬AI 교육과정(피지컬LLM프로젝트) 운영 용역
+              - generic [ref=e787]:
+                - generic [ref=e788]:
+                  - generic [ref=e789]:
+                    - generic [ref=e790]: 적합도
+                    - generic [ref=e791]: "38"
+                  - generic [ref=e792]:
+                    - generic [ref=e793]: 예산
+                    - generic [ref=e794]: KRW 60000000
+                - generic [ref=e795]: 미정
+            - link "Go g2b(나라장터) 계명대학교 산학협력단 실감미디어 혁신융합대학사업단 2026학년도 하계 계절학기 산업체 집중이수 PBL 교과목 용역 실감미디어 혁신융합대학사업단 2026학년도 하계 계절학기 산업체 집중이수 PBL 교과목 용역 적합도 38 예산 KRW 98120000 미정" [ref=e796] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01561618
+              - generic [ref=e798]: Go
+              - generic [ref=e799]:
+                - generic [ref=e800]:
+                  - generic [ref=e801]: g2b(나라장터)
+                  - generic [ref=e802]: 계명대학교 산학협력단
+                - heading "실감미디어 혁신융합대학사업단 2026학년도 하계 계절학기 산업체 집중이수 PBL 교과목 용역" [level=4] [ref=e803]
+                - paragraph [ref=e804]: 실감미디어 혁신융합대학사업단 2026학년도 하계 계절학기 산업체 집중이수 PBL 교과목 용역
+              - generic [ref=e805]:
+                - generic [ref=e806]:
+                  - generic [ref=e807]:
+                    - generic [ref=e808]: 적합도
+                    - generic [ref=e809]: "38"
+                  - generic [ref=e810]:
+                    - generic [ref=e811]: 예산
+                    - generic [ref=e812]: KRW 98120000
+                - generic [ref=e813]: 미정
+            - link "Go g2b(나라장터) 계명대학교 산학협력단 2026년 첨단산업 인재양성 부트캠프(AI분야) 하계 몰입형 교육 운영 용역 2026년 첨단산업 인재양성 부트캠프(AI분야) 하계 몰입형 교육 운영 용역 적합도 38 예산 KRW 28000000 미정" [ref=e814] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01561658
+              - generic [ref=e816]: Go
+              - generic [ref=e817]:
+                - generic [ref=e818]:
+                  - generic [ref=e819]: g2b(나라장터)
+                  - generic [ref=e820]: 계명대학교 산학협력단
+                - heading "2026년 첨단산업 인재양성 부트캠프(AI분야) 하계 몰입형 교육 운영 용역" [level=4] [ref=e821]
+                - paragraph [ref=e822]: 2026년 첨단산업 인재양성 부트캠프(AI분야) 하계 몰입형 교육 운영 용역
+              - generic [ref=e823]:
+                - generic [ref=e824]:
+                  - generic [ref=e825]:
+                    - generic [ref=e826]: 적합도
+                    - generic [ref=e827]: "38"
+                  - generic [ref=e828]:
+                    - generic [ref=e829]: 예산
+                    - generic [ref=e830]: KRW 28000000
+                - generic [ref=e831]: 미정
+            - link "Go g2b(나라장터) 대구한의대학교 2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(보건 분야) 용역 2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(보건 분야) 용역 적합도 38 예산 KRW 199999999 미정" [ref=e832] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01563944
+              - generic [ref=e834]: Go
+              - generic [ref=e835]:
+                - generic [ref=e836]:
+                  - generic [ref=e837]: g2b(나라장터)
+                  - generic [ref=e838]: 대구한의대학교
+                - heading "2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(보건 분야) 용역" [level=4] [ref=e839]
+                - paragraph [ref=e840]: 2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(보건 분야) 용역
+              - generic [ref=e841]:
+                - generic [ref=e842]:
+                  - generic [ref=e843]:
+                    - generic [ref=e844]: 적합도
+                    - generic [ref=e845]: "38"
+                  - generic [ref=e846]:
+                    - generic [ref=e847]: 예산
+                    - generic [ref=e848]: KRW 199999999
+                - generic [ref=e849]: 미정
+            - link "Go g2b(나라장터) 대구한의대학교 2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(물리치료 분야) 용역 2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(물리치료 분야) 용역 적합도 38 예산 KRW 2000000000 미정" [ref=e850] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01563877
+              - generic [ref=e852]: Go
+              - generic [ref=e853]:
+                - generic [ref=e854]:
+                  - generic [ref=e855]: g2b(나라장터)
+                  - generic [ref=e856]: 대구한의대학교
+                - heading "2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(물리치료 분야) 용역" [level=4] [ref=e857]
+                - paragraph [ref=e858]: 2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(물리치료 분야) 용역
+              - generic [ref=e859]:
+                - generic [ref=e860]:
+                  - generic [ref=e861]:
+                    - generic [ref=e862]: 적합도
+                    - generic [ref=e863]: "38"
+                  - generic [ref=e864]:
+                    - generic [ref=e865]: 예산
+                    - generic [ref=e866]: KRW 2000000000
+                - generic [ref=e867]: 미정
+            - link "Go g2b(나라장터) 대구한의대학교 2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(물리치료 분야) 용역 2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(물리치료 분야) 용역 적합도 38 예산 KRW 199999999 미정" [ref=e868] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01563994
+              - generic [ref=e870]: Go
+              - generic [ref=e871]:
+                - generic [ref=e872]:
+                  - generic [ref=e873]: g2b(나라장터)
+                  - generic [ref=e874]: 대구한의대학교
+                - heading "2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(물리치료 분야) 용역" [level=4] [ref=e875]
+                - paragraph [ref=e876]: 2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(물리치료 분야) 용역
+              - generic [ref=e877]:
+                - generic [ref=e878]:
+                  - generic [ref=e879]:
+                    - generic [ref=e880]: 적합도
+                    - generic [ref=e881]: "38"
+                  - generic [ref=e882]:
+                    - generic [ref=e883]: 예산
+                    - generic [ref=e884]: KRW 199999999
+                - generic [ref=e885]: 미정
+            - link "Go g2b(나라장터) 대구한의대학교 2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(한의 분야) 용역 2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(한의 분야) 용역 적합도 38 예산 KRW 100000000 미정" [ref=e886] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01564005
+              - generic [ref=e888]: Go
+              - generic [ref=e889]:
+                - generic [ref=e890]:
+                  - generic [ref=e891]: g2b(나라장터)
+                  - generic [ref=e892]: 대구한의대학교
+                - heading "2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(한의 분야) 용역" [level=4] [ref=e893]
+                - paragraph [ref=e894]: 2026학년도 K-MEDI 디지털 교육콘텐츠(선도대학 VR) 개발(한의 분야) 용역
+              - generic [ref=e895]:
+                - generic [ref=e896]:
+                  - generic [ref=e897]:
+                    - generic [ref=e898]: 적합도
+                    - generic [ref=e899]: "38"
+                  - generic [ref=e900]:
+                    - generic [ref=e901]: 예산
+                    - generic [ref=e902]: KRW 100000000
+                - generic [ref=e903]: 미정
+            - link "Go g2b(나라장터) 대구대학교 산학협력단 2026년 몰입형-클라우드AI 교육(클라우드컴퓨팅 실무) 운영 용역 2026년 몰입형-클라우드AI 교육(클라우드컴퓨팅 실무) 운영 용역 적합도 38 예산 KRW 88000000 미정" [ref=e904] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01546693
+              - generic [ref=e906]: Go
+              - generic [ref=e907]:
+                - generic [ref=e908]:
+                  - generic [ref=e909]: g2b(나라장터)
+                  - generic [ref=e910]: 대구대학교 산학협력단
+                - heading "2026년 몰입형-클라우드AI 교육(클라우드컴퓨팅 실무) 운영 용역" [level=4] [ref=e911]
+                - paragraph [ref=e912]: 2026년 몰입형-클라우드AI 교육(클라우드컴퓨팅 실무) 운영 용역
+              - generic [ref=e913]:
+                - generic [ref=e914]:
+                  - generic [ref=e915]:
+                    - generic [ref=e916]: 적합도
+                    - generic [ref=e917]: "38"
+                  - generic [ref=e918]:
+                    - generic [ref=e919]: 예산
+                    - generic [ref=e920]: KRW 88000000
+                - generic [ref=e921]: 미정
+            - link "Go g2b(나라장터) 부산조선해양기자재공업협동조합 디지털트윈 다국어 작업표준 및 OJT 솔루션 디지털트윈 다국어 작업표준 및 OJT 솔루션 적합도 38 예산 KRW 80000000 미정" [ref=e922] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01536196
+              - generic [ref=e924]: Go
+              - generic [ref=e925]:
+                - generic [ref=e926]:
+                  - generic [ref=e927]: g2b(나라장터)
+                  - generic [ref=e928]: 부산조선해양기자재공업협동조합
+                - heading "디지털트윈 다국어 작업표준 및 OJT 솔루션" [level=4] [ref=e929]
+                - paragraph [ref=e930]: 디지털트윈 다국어 작업표준 및 OJT 솔루션
+              - generic [ref=e931]:
+                - generic [ref=e932]:
+                  - generic [ref=e933]:
+                    - generic [ref=e934]: 적합도
+                    - generic [ref=e935]: "38"
+                  - generic [ref=e936]:
+                    - generic [ref=e937]: 예산
+                    - generic [ref=e938]: KRW 80000000
+                - generic [ref=e939]: 미정
+            - link "Go g2b(나라장터) 대구대학교 산학협력단 2026년 몰입형-피지컬AI 교육과정(피지컬LLM프로젝트) 운영 용역 2026년 몰입형-피지컬AI 교육과정(피지컬LLM프로젝트) 운영 용역 적합도 38 예산 KRW 60000000 미정" [ref=e940] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01546798
+              - generic [ref=e942]: Go
+              - generic [ref=e943]:
+                - generic [ref=e944]:
+                  - generic [ref=e945]: g2b(나라장터)
+                  - generic [ref=e946]: 대구대학교 산학협력단
+                - heading "2026년 몰입형-피지컬AI 교육과정(피지컬LLM프로젝트) 운영 용역" [level=4] [ref=e947]
+                - paragraph [ref=e948]: 2026년 몰입형-피지컬AI 교육과정(피지컬LLM프로젝트) 운영 용역
+              - generic [ref=e949]:
+                - generic [ref=e950]:
+                  - generic [ref=e951]:
+                    - generic [ref=e952]: 적합도
+                    - generic [ref=e953]: "38"
+                  - generic [ref=e954]:
+                    - generic [ref=e955]: 예산
+                    - generic [ref=e956]: KRW 60000000
+                - generic [ref=e957]: 미정
+            - link "Go g2b(나라장터) 대구대학교 산학협력단 2026년 몰입형-AI보안 교육과정 운영 용역 2026년 몰입형-AI보안 교육과정 운영 용역 적합도 38 예산 KRW 62000000 미정" [ref=e958] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01546748
+              - generic [ref=e960]: Go
+              - generic [ref=e961]:
+                - generic [ref=e962]:
+                  - generic [ref=e963]: g2b(나라장터)
+                  - generic [ref=e964]: 대구대학교 산학협력단
+                - heading "2026년 몰입형-AI보안 교육과정 운영 용역" [level=4] [ref=e965]
+                - paragraph [ref=e966]: 2026년 몰입형-AI보안 교육과정 운영 용역
+              - generic [ref=e967]:
+                - generic [ref=e968]:
+                  - generic [ref=e969]:
+                    - generic [ref=e970]: 적합도
+                    - generic [ref=e971]: "38"
+                  - generic [ref=e972]:
+                    - generic [ref=e973]: 예산
+                    - generic [ref=e974]: KRW 62000000
+                - generic [ref=e975]: 미정
+  - region "Notifications (F8)":
+    - list

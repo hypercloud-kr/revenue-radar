@@ -1,0 +1,41 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Revenue Radar" [ref=e6]
+        - generic [ref=e7]: Revenue Radar
+      - navigation [ref=e8]:
+        - link "대시보드" [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e10]
+          - text: 대시보드
+        - link "인박스" [ref=e15] [cursor=pointer]:
+          - /url: /inbox
+          - img [ref=e16]
+          - text: 인박스
+      - generic [ref=e19]:
+        - generic [ref=e20]: System Status
+        - generic [ref=e21]: 연결 확인 중
+    - generic [ref=e25]:
+      - banner [ref=e26]:
+        - heading "흩어진 공공 공고를 BD가 바로 실행할 수 있는 제안 패키지로 바꿉니다" [level=1] [ref=e28]
+      - main [ref=e29]:
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - heading "인박스" [level=2] [ref=e34]
+              - paragraph [ref=e35]: 모든 수집된 공고를 우선순위(적합도) 순으로 검토하세요.
+            - generic [ref=e37]:
+              - img [ref=e38]
+              - searchbox "공고명, 기관 검색..." [ref=e41]
+          - generic [ref=e42]:
+            - generic [ref=e43]:
+              - img [ref=e44]
+              - text: "필터:"
+            - generic [ref=e46]:
+              - button "●전체" [ref=e47]
+              - button "●Go" [ref=e48]
+              - button "●Watch" [ref=e49]
+              - button "●No-go" [ref=e50]
+  - region "Notifications (F8)":
+    - list

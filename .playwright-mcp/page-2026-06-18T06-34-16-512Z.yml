@@ -1,0 +1,90 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Revenue Radar" [ref=e6]
+        - generic [ref=e7]: Revenue Radar
+      - navigation [ref=e8]:
+        - link "대시보드" [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e10]
+          - text: 대시보드
+        - link "인박스" [ref=e15] [cursor=pointer]:
+          - /url: /inbox
+          - img [ref=e16]
+          - text: 인박스
+      - generic [ref=e19]:
+        - generic [ref=e20]: System Status
+        - generic [ref=e21]: 실제 API 연결됨
+    - generic [ref=e25]:
+      - banner [ref=e26]:
+        - heading "흩어진 공공 공고를 BD가 바로 실행할 수 있는 제안 패키지로 바꿉니다" [level=1] [ref=e28]
+      - main [ref=e29]:
+        - generic [ref=e31]:
+          - generic [ref=e35]:
+            - link "목록으로" [ref=e36] [cursor=pointer]:
+              - /url: /inbox
+              - img [ref=e37]
+              - text: 목록으로
+            - generic [ref=e39]: Go
+            - generic [ref=e40]: g2b(나라장터)
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - generic [ref=e43]:
+                - generic [ref=e44]:
+                  - heading "2026 경북 메타버스 XR 체험존 운영 용역" [level=1] [ref=e45]
+                  - generic [ref=e46]:
+                    - generic [ref=e48]: 경상북도문화관광공사
+                    - generic [ref=e49]:
+                      - generic [ref=e50]: "예산:"
+                      - generic [ref=e51]: KRW 92500000
+                    - generic [ref=e52]:
+                      - generic [ref=e53]: "마감일:"
+                      - generic [ref=e54]: 미정 (미정)
+                    - link "원문 링크" [ref=e55] [cursor=pointer]:
+                      - /url: https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01543110&bidPbancOrd=000
+                      - text: 원문 링크
+                      - img [ref=e56]
+                  - generic [ref=e60]:
+                    - generic [ref=e61]:
+                      - generic [ref=e62]: "76"
+                      - generic [ref=e63]: 적합도
+                    - generic [ref=e64]:
+                      - generic [ref=e65]: "30"
+                      - generic [ref=e66]: 시급도
+                    - generic [ref=e67]:
+                      - generic [ref=e68]: "0"
+                      - generic [ref=e69]: 리스크
+                - generic [ref=e70]:
+                  - button "분석 중..." [disabled]: 분석 중...
+              - generic [ref=e72]: 2026 경북 메타버스 XR 체험존 운영 용역
+            - generic [ref=e73]:
+              - generic [ref=e74]:
+                - heading "핵심 요구사항" [level=3] [ref=e75]:
+                  - img [ref=e76]
+                  - text: 핵심 요구사항
+                - paragraph [ref=e80]: 원문 확인 필요
+              - generic [ref=e81]:
+                - heading "당사 근거" [level=3] [ref=e82]:
+                  - img [ref=e83]
+                  - text: 당사 근거
+                - list [ref=e85]:
+                  - listitem [ref=e86]:
+                    - generic [ref=e87]: ✓
+                    - text: "직접 키워드 매칭: 메타버스, XR"
+              - generic [ref=e88]:
+                - heading "리스크 / 누락 정보" [level=3] [ref=e89]:
+                  - img [ref=e90]
+                  - text: 리스크 / 누락 정보
+                - paragraph [ref=e92]: 원문 확인 필요
+          - generic [ref=e93]:
+            - img [ref=e97]
+            - generic [ref=e100]: AI 제안 패키지 생성 중...
+            - generic [ref=e101]:
+              - generic [ref=e102]: 공고 요구사항 분석 중
+              - generic [ref=e103]: HyperCloud 적합성 판단 중
+              - generic [ref=e104]: 제안 초안 작성 중
+              - generic [ref=e105]: Slack·이메일 공유 문구 생성 중
+            - generic [ref=e106]: 이 작업은 약 40~60초가 소요될 수 있습니다.
+  - region "Notifications (F8)":
+    - list

@@ -1,13 +1,18 @@
 import express from 'express';
 import cors from 'cors';
+import multer from 'multer';
 import { query, ping } from './db.js';
 import { rowToOpportunity, rowToProposalPack } from './util/mappers.js';
 import { runCollect } from './collectors/index.js';
 import { generateProposal } from './services/generate.js';
+import { extractText } from './services/extract.js';
 import { todaySeoul } from './util/dates.js';
 
 const app = express();
 app.use(express.json({ limit: '1mb' }));
+
+// 첨부 업로드(P1.5): 메모리 저장 + 10MB 캡(업로드 전용, URL 다운로드 없음).
+const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 10 * 1024 * 1024 } });
 
 // CORS(§4-7,13): 운영 출처(CORS_ORIGIN)는 정확히 허용 + Replit 미리보기(*.replit.dev) 허용.
 const corsOrigin = process.env.CORS_ORIGIN || '*';
@@ -86,7 +91,8 @@ app.post('/api/opportunities/:id/proposal', async (req, res, next) => {
     if (!rows.length) return res.status(404).json({ error: 'not found' });
     const opp = rowToOpportunity(rows[0]);
 
-    const pack = await generateProposal(opp);
+    const attachmentText = typeof req.body?.attachmentText === 'string' ? req.body.attachmentText : null;
+    const pack = await generateProposal(opp, { attachmentText });
 
     await query(
       `INSERT INTO proposals
@@ -117,6 +123,27 @@ app.post('/api/collect', async (_req, res, next) => {
   try {
     const result = await runCollect();
     res.json(result); // { received, relevant, upserted }
+  } catch (e) {
+    next(e);
+  }
+});
+
+// --- 첨부 본문 추출(P1.5): PDF·DOCX ---
+app.post('/api/extract', upload.single('file'), async (req, res, next) => {
+  try {
+    if (!req.file) return res.status(400).json({ error: '파일이 없습니다(form-data field: file).' });
+    const { chars, truncated, text } = await extractText(
+      req.file.buffer,
+      req.file.originalname,
+      req.file.mimetype
+    );
+    if (!chars) {
+      // 스캔본(이미지) PDF 등 텍스트 0자 → OCR 미지원
+      return res.status(422).json({
+        error: '텍스트를 추출하지 못했습니다(스캔본 이미지일 수 있음). 원문 확인이 필요합니다.',
+      });
+    }
+    res.json({ filename: req.file.originalname, chars, truncated, text });
   } catch (e) {
     next(e);
   }
@@ -160,7 +187,10 @@ app.get('/api/stats', async (_req, res, next) => {
 // 에러 핸들러
 app.use((err, _req, res, _next) => {
   console.error('[error]', err);
-  res.status(500).json({ error: err.message || 'internal error' });
+  if (err.code === 'LIMIT_FILE_SIZE') {
+    return res.status(413).json({ error: '파일이 너무 큽니다(최대 10MB).' });
+  }
+  res.status(err.status || 500).json({ error: err.message || 'internal error' });
 });
 
 const PORT = Number(process.env.PORT || 8080);

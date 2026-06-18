@@ -1,0 +1,294 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Revenue Radar" [ref=e6]
+        - generic [ref=e7]: Revenue Radar
+      - navigation [ref=e8]:
+        - link "대시보드" [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e10]
+          - text: 대시보드
+        - link "인박스" [ref=e15] [cursor=pointer]:
+          - /url: /inbox
+          - img [ref=e16]
+          - text: 인박스
+      - generic [ref=e19]:
+        - generic [ref=e20]: System Status
+        - generic [ref=e21]: 실제 API 연결됨
+    - generic [ref=e25]:
+      - banner [ref=e26]:
+        - heading "흩어진 공공 공고를 BD가 바로 실행할 수 있는 제안 패키지로 바꿉니다" [level=1] [ref=e28]
+      - main [ref=e29]:
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - heading "인박스" [level=2] [ref=e34]
+              - paragraph [ref=e35]: 모든 수집된 공고를 우선순위(적합도) 순으로 검토하세요.
+            - generic [ref=e37]:
+              - img [ref=e38]
+              - searchbox "공고명, 기관 검색..." [ref=e41]
+          - generic [ref=e42]:
+            - generic [ref=e43]:
+              - img [ref=e44]
+              - text: "필터:"
+            - generic [ref=e46]:
+              - button "●전체" [ref=e47]
+              - button "●Go" [ref=e48]
+              - button "●Watch" [ref=e49]
+              - button "●No-go" [active] [ref=e50]
+          - generic [ref=e52]:
+            - link "No-go g2b(나라장터) 재단법인 신라문화유산연구원 2026 국가유산 미디어아트 경주 대릉원 콘텐츠 구축 및 운영 용역 2026 국가유산 미디어아트 경주 대릉원 콘텐츠 구축 및 운영 용역 적합도 20 예산 KRW 1203000000 D-1" [ref=e976] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01565929
+              - generic [ref=e978]: No-go
+              - generic [ref=e979]:
+                - generic [ref=e980]:
+                  - generic [ref=e981]: g2b(나라장터)
+                  - generic [ref=e982]: 재단법인 신라문화유산연구원
+                - heading "2026 국가유산 미디어아트 경주 대릉원 콘텐츠 구축 및 운영 용역" [level=4] [ref=e983]
+                - paragraph [ref=e984]: 2026 국가유산 미디어아트 경주 대릉원 콘텐츠 구축 및 운영 용역
+              - generic [ref=e985]:
+                - generic [ref=e986]:
+                  - generic [ref=e987]:
+                    - generic [ref=e988]: 적합도
+                    - generic [ref=e989]: "20"
+                  - generic [ref=e990]:
+                    - generic [ref=e991]: 예산
+                    - generic [ref=e992]: KRW 1203000000
+                - generic [ref=e993]: D-1
+            - link "No-go g2b(나라장터) 소방청 국립소방연구원 수막설비 설치 가이드라인 도출을 위한 시뮬레이션 분석 연구 수막설비 설치 가이드라인 도출을 위한 시뮬레이션 분석 연구 적합도 20 예산 KRW 30000000 D-1" [ref=e994] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01564807
+              - generic [ref=e996]: No-go
+              - generic [ref=e997]:
+                - generic [ref=e998]:
+                  - generic [ref=e999]: g2b(나라장터)
+                  - generic [ref=e1000]: 소방청 국립소방연구원
+                - heading "수막설비 설치 가이드라인 도출을 위한 시뮬레이션 분석 연구" [level=4] [ref=e1001]
+                - paragraph [ref=e1002]: 수막설비 설치 가이드라인 도출을 위한 시뮬레이션 분석 연구
+              - generic [ref=e1003]:
+                - generic [ref=e1004]:
+                  - generic [ref=e1005]:
+                    - generic [ref=e1006]: 적합도
+                    - generic [ref=e1007]: "20"
+                  - generic [ref=e1008]:
+                    - generic [ref=e1009]: 예산
+                    - generic [ref=e1010]: KRW 30000000
+                - generic [ref=e1011]: D-1
+            - link "No-go g2b(나라장터) (주)삼십팔도씨 배달귀 3D 애니메이션 제작 배달귀 3D 애니메이션 제작 적합도 20 예산 KRW 460193486 D-4" [ref=e1012] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01563593
+              - generic [ref=e1014]: No-go
+              - generic [ref=e1015]:
+                - generic [ref=e1016]:
+                  - generic [ref=e1017]: g2b(나라장터)
+                  - generic [ref=e1018]: (주)삼십팔도씨
+                - heading "배달귀 3D 애니메이션 제작" [level=4] [ref=e1019]
+                - paragraph [ref=e1020]: 배달귀 3D 애니메이션 제작
+              - generic [ref=e1021]:
+                - generic [ref=e1022]:
+                  - generic [ref=e1023]:
+                    - generic [ref=e1024]: 적합도
+                    - generic [ref=e1025]: "20"
+                  - generic [ref=e1026]:
+                    - generic [ref=e1027]: 예산
+                    - generic [ref=e1028]: KRW 460193486
+                - generic [ref=e1029]: D-4
+            - link "No-go K-Startup 교육기관 [서울과학기술대학교] 제조창업 장비교육 3D프린터 장비교육에 관심잇는 분들께서는 많은 신청부탁드립니다. 적합도 20 예산 미정 D-4" [ref=e1030] [cursor=pointer]:
+              - /url: /opportunities/kstartup:177990
+              - generic [ref=e1032]: No-go
+              - generic [ref=e1033]:
+                - generic [ref=e1034]:
+                  - generic [ref=e1035]: K-Startup
+                  - generic [ref=e1036]: 교육기관
+                - heading "[서울과학기술대학교] 제조창업 장비교육" [level=4] [ref=e1037]
+                - paragraph [ref=e1038]: 3D프린터 장비교육에 관심잇는 분들께서는 많은 신청부탁드립니다.
+              - generic [ref=e1039]:
+                - generic [ref=e1040]:
+                  - generic [ref=e1041]:
+                    - generic [ref=e1042]: 적합도
+                    - generic [ref=e1043]: "20"
+                  - generic [ref=e1044]:
+                    - generic [ref=e1045]: 예산
+                    - generic [ref=e1046]: 미정
+                - generic [ref=e1047]: D-4
+            - link "No-go g2b(나라장터) 조달청 2026년 서남해 3D 물리탐사 취득자료 전산처리 용역 2026년 서남해 3D 물리탐사 취득자료 전산처리 용역 적합도 20 예산 KRW 1710767600 D-5" [ref=e1048] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01547668
+              - generic [ref=e1050]: No-go
+              - generic [ref=e1051]:
+                - generic [ref=e1052]:
+                  - generic [ref=e1053]: g2b(나라장터)
+                  - generic [ref=e1054]: 조달청
+                - heading "2026년 서남해 3D 물리탐사 취득자료 전산처리 용역" [level=4] [ref=e1055]
+                - paragraph [ref=e1056]: 2026년 서남해 3D 물리탐사 취득자료 전산처리 용역
+              - generic [ref=e1057]:
+                - generic [ref=e1058]:
+                  - generic [ref=e1059]:
+                    - generic [ref=e1060]: 적합도
+                    - generic [ref=e1061]: "20"
+                  - generic [ref=e1062]:
+                    - generic [ref=e1063]: 예산
+                    - generic [ref=e1064]: KRW 1710767600
+                - generic [ref=e1065]: D-5
+            - link "No-go K-Startup 교육기관 [동대문구 창업지원센터] 6월 메이커스페이스(레이저커터, 3D프린팅) 교육 일정 동대문구 창업지원센터에서는 센터 입주기업과 일반인을 대상으로 3D프린터, 레이저커터 교육을 진행합니다 적합도 20 예산 미정 D-5" [ref=e1066] [cursor=pointer]:
+              - /url: /opportunities/kstartup:177950
+              - generic [ref=e1068]: No-go
+              - generic [ref=e1069]:
+                - generic [ref=e1070]:
+                  - generic [ref=e1071]: K-Startup
+                  - generic [ref=e1072]: 교육기관
+                - heading "[동대문구 창업지원센터] 6월 메이커스페이스(레이저커터, 3D프린팅) 교육 일정" [level=4] [ref=e1073]
+                - paragraph [ref=e1074]: 동대문구 창업지원센터에서는 센터 입주기업과 일반인을 대상으로 3D프린터, 레이저커터 교육을 진행합니다
+              - generic [ref=e1075]:
+                - generic [ref=e1076]:
+                  - generic [ref=e1077]:
+                    - generic [ref=e1078]: 적합도
+                    - generic [ref=e1079]: "20"
+                  - generic [ref=e1080]:
+                    - generic [ref=e1081]: 예산
+                    - generic [ref=e1082]: 미정
+                - generic [ref=e1083]: D-5
+            - link "No-go g2b(나라장터) 재단법인수원문화재단 2026 수원화성 미디어아트 시스템 설치 및 행사 운영 등 용역 2026 수원화성 미디어아트 시스템 설치 및 행사 운영 등 용역 적합도 20 예산 KRW 589000000 D-7" [ref=e1084] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01559688
+              - generic [ref=e1086]: No-go
+              - generic [ref=e1087]:
+                - generic [ref=e1088]:
+                  - generic [ref=e1089]: g2b(나라장터)
+                  - generic [ref=e1090]: 재단법인수원문화재단
+                - heading "2026 수원화성 미디어아트 시스템 설치 및 행사 운영 등 용역" [level=4] [ref=e1091]
+                - paragraph [ref=e1092]: 2026 수원화성 미디어아트 시스템 설치 및 행사 운영 등 용역
+              - generic [ref=e1093]:
+                - generic [ref=e1094]:
+                  - generic [ref=e1095]:
+                    - generic [ref=e1096]: 적합도
+                    - generic [ref=e1097]: "20"
+                  - generic [ref=e1098]:
+                    - generic [ref=e1099]: 예산
+                    - generic [ref=e1100]: KRW 589000000
+                - generic [ref=e1101]: D-7
+            - link [ref=e1102] [cursor=pointer]:
+              - /url: /opportunities/kocca:3-26-D000-007
+              - generic [ref=e1104]: No-go
+              - generic [ref=e1105]:
+                - generic [ref=e1106]:
+                  - generic [ref=e1107]: KOCCA(콘진원)
+                  - generic [ref=e1108]: 한국콘텐츠진흥원
+                - heading "2026 Digicon6 Aisa 한국지역어워드 공모" [level=4] [ref=e1109]
+                - paragraph [ref=e1110]: "공모개요 및 공모분야:ㅇ 공모개요 - 아시아를 대표하는 애니메이션 작품 발굴을 위해 일본동경방송(TBS)이 주최하는 디지털영상콘텐츠 공모전 &#39;Digicon6 Asia&#39;에 참가할 한국 작품을 모집합니다. ㅇ 공모분야 - 2D/3D 애니메이션, 스톱모션, 클레이 등 디지털 처리한 모든 애니메이션 영상 - 15분 이내로 편집 완료된 단편 애니메이션 작품에 한함\\n접수기간:ㅇ 2026. 6. 15.(월) ~ 7. 3.(금) 15시\\n시상내역:ㅇ 총 3편, 상금 450만원 - (금상) 1편 / 상금 250만원 - (은상_Best story) 1편 / 상금 100만원 - (은상_Best Art) 1편 / 상금 100만원 ㅇ 혜택 - 본선어워드 최종 엔트리 참가 자격 - 수상 작품 중 일부 본선어워드참가 항공/숙박제공(3박4일) ※ 현지사정에 따라 변동 가능\\n응모자격:ㅇ 대한민국 작품(연령, 성별, 프로, 아마추어 불문) ㅇ 응모작품의 저작권 보유(작품에 사용된 악곡은 저작곡, 저작권프리악곡 또는 저작권 사용 승인을 받는 작품에 한함) ㅇ 복수 응모 가능(응모 작품 수 제한 없음)\\n신청 및 접수:ㅇ 접수 방법: 사업관리시스템을 통한 접수 - 본 게시글 하단 사업관리시스템 바로가기 클릭 혹은 pms.kocca.kr 접속 - 회원가입 및 과제신청절차에 따라 공모 접수(세부내용은 사업관리시스템 홈페이지 내 사용 매뉴얼 참고) ㅇ 신청 서류 - 작품응모 신청서(지정서식) - 작품 영상 URL (자유서식, 유튜브 및 비메오 링크) - 개인정보 수집·이용·제공 동의서(지정서식) - 직접참여인력 및 이해관계자리스트(지정서식)\\n선정방법:ㅇ 평가 방법(평가 기준) - 기획독창성(35점): 작품 컨셉, 기획, 스토리라인, 시나리오 등의 차별적이고 참신한 정도 - 작품성 및 예술성(35점): 아트웍, 디자인, 편집 등 영상의 예술적 가치 확보 여부 - 완성도(20점): 작품의 질적 완성도 - 대중성 및 상업성(10점): 일반 대중이 호기심을 느끼고 공감하는 정도, 잠재적인 상업성 ㅇ 선정방법 - 평가기준에 따른 평가점수의 평균 점수 산출(최고최저점 제외) 80점 이상 득한 작품 중 아래 기준에 따라 수상작 3편 선정 ※세부 내용 공고문 참고"
+              - generic [ref=e1111]:
+                - generic [ref=e1112]:
+                  - generic [ref=e1113]:
+                    - generic [ref=e1114]: 적합도
+                    - generic [ref=e1115]: "20"
+                  - generic [ref=e1116]:
+                    - generic [ref=e1117]: 예산
+                    - generic [ref=e1118]: 미정
+                - generic [ref=e1119]: D-15
+            - link "No-go alio(공공기관) 한국생산기술연구원 대형 PBF 방식 3D프린터 대형 PBF 방식 3D프린터 적합도 20 예산 미정 D-21" [ref=e1120] [cursor=pointer]:
+              - /url: /opportunities/alio:3546421
+              - generic [ref=e1122]: No-go
+              - generic [ref=e1123]:
+                - generic [ref=e1124]:
+                  - generic [ref=e1125]: alio(공공기관)
+                  - generic [ref=e1126]: 한국생산기술연구원
+                - heading "대형 PBF 방식 3D프린터" [level=4] [ref=e1127]
+                - paragraph [ref=e1128]: 대형 PBF 방식 3D프린터
+              - generic [ref=e1129]:
+                - generic [ref=e1130]:
+                  - generic [ref=e1131]:
+                    - generic [ref=e1132]: 적합도
+                    - generic [ref=e1133]: "20"
+                  - generic [ref=e1134]:
+                    - generic [ref=e1135]: 예산
+                    - generic [ref=e1136]: 미정
+                - generic [ref=e1137]: D-21
+            - link "No-go g2b(나라장터) 국가유산진흥원 2026년 국가유산 미디어아트 영상 제작 2026년 국가유산 미디어아트 영상 제작 적합도 20 예산 KRW 495000000 D-33" [ref=e1138] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01565053
+              - generic [ref=e1140]: No-go
+              - generic [ref=e1141]:
+                - generic [ref=e1142]:
+                  - generic [ref=e1143]: g2b(나라장터)
+                  - generic [ref=e1144]: 국가유산진흥원
+                - heading "2026년 국가유산 미디어아트 영상 제작" [level=4] [ref=e1145]
+                - paragraph [ref=e1146]: 2026년 국가유산 미디어아트 영상 제작
+              - generic [ref=e1147]:
+                - generic [ref=e1148]:
+                  - generic [ref=e1149]:
+                    - generic [ref=e1150]: 적합도
+                    - generic [ref=e1151]: "20"
+                  - generic [ref=e1152]:
+                    - generic [ref=e1153]: 예산
+                    - generic [ref=e1154]: KRW 495000000
+                - generic [ref=e1155]: D-33
+            - link "No-go K-Startup 민간 2026년 3D프린팅 전문기술 활용지원 사업 3D-FAB은 과학기술정보통신부 소관의 정보통신산업진흥원에서 예비창업자, 스타트업, 중소기업을 위해 준비한 3D프린팅 기술 복합지원 공간입니다. 마포 3D-FAB에서는 예비창업자, 스타트업, 중소기업을 대상으로 3D프린팅 전문기술을 통하여 시제품 제작의 전 주기(3D모델링-3D프린팅-후가공)를 지원해 드립니다. 시제품 제작 기술지원을 다음과 같이 공고하오니 참여를 희망하는 분들은 안내에 따라 신청하여 주시기 바랍니다. 적합도 20 예산 미정 D-196" [ref=e1156] [cursor=pointer]:
+              - /url: /opportunities/kstartup:176442
+              - generic [ref=e1158]: No-go
+              - generic [ref=e1159]:
+                - generic [ref=e1160]:
+                  - generic [ref=e1161]: K-Startup
+                  - generic [ref=e1162]: 민간
+                - heading "2026년 3D프린팅 전문기술 활용지원 사업" [level=4] [ref=e1163]
+                - paragraph [ref=e1164]: 3D-FAB은 과학기술정보통신부 소관의 정보통신산업진흥원에서 예비창업자, 스타트업, 중소기업을 위해 준비한 3D프린팅 기술 복합지원 공간입니다. 마포 3D-FAB에서는 예비창업자, 스타트업, 중소기업을 대상으로 3D프린팅 전문기술을 통하여 시제품 제작의 전 주기(3D모델링-3D프린팅-후가공)를 지원해 드립니다. 시제품 제작 기술지원을 다음과 같이 공고하오니 참여를 희망하는 분들은 안내에 따라 신청하여 주시기 바랍니다.
+              - generic [ref=e1165]:
+                - generic [ref=e1166]:
+                  - generic [ref=e1167]:
+                    - generic [ref=e1168]: 적합도
+                    - generic [ref=e1169]: "20"
+                  - generic [ref=e1170]:
+                    - generic [ref=e1171]: 예산
+                    - generic [ref=e1172]: 미정
+                - generic [ref=e1173]: D-196
+            - link "No-go g2b(나라장터) 전라남도 완도군 완도 고금도해전 전승수군 체험관 전시연출 설계 및 제작·설치 용역(협상에 의한 계약) 완도 고금도해전 전승수군 체험관 전시연출 설계 및 제작·설치 용역(협상에 의한 계약) 적합도 20 예산 KRW 1500000000 미정" [ref=e1174] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01552292
+              - generic [ref=e1176]: No-go
+              - generic [ref=e1177]:
+                - generic [ref=e1178]:
+                  - generic [ref=e1179]: g2b(나라장터)
+                  - generic [ref=e1180]: 전라남도 완도군
+                - heading "완도 고금도해전 전승수군 체험관 전시연출 설계 및 제작·설치 용역(협상에 의한 계약)" [level=4] [ref=e1181]
+                - paragraph [ref=e1182]: 완도 고금도해전 전승수군 체험관 전시연출 설계 및 제작·설치 용역(협상에 의한 계약)
+              - generic [ref=e1183]:
+                - generic [ref=e1184]:
+                  - generic [ref=e1185]:
+                    - generic [ref=e1186]: 적합도
+                    - generic [ref=e1187]: "20"
+                  - generic [ref=e1188]:
+                    - generic [ref=e1189]: 예산
+                    - generic [ref=e1190]: KRW 1500000000
+                - generic [ref=e1191]: 미정
+            - link "No-go g2b(나라장터) 한라대학교 [RISE사업 1-2 원주] 철도 노반 보강에 따른 지반 안정성에 관한 시뮬레이션 및 평가 [RISE사업 1-2 원주] 철도 노반 보강에 따른 지반 안정성에 관한 시뮬레이션 및 평가 적합도 20 예산 KRW 28000000 미정" [ref=e1192] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01543609
+              - generic [ref=e1194]: No-go
+              - generic [ref=e1195]:
+                - generic [ref=e1196]:
+                  - generic [ref=e1197]: g2b(나라장터)
+                  - generic [ref=e1198]: 한라대학교
+                - heading "[RISE사업 1-2 원주] 철도 노반 보강에 따른 지반 안정성에 관한 시뮬레이션 및 평가" [level=4] [ref=e1199]
+                - paragraph [ref=e1200]: "[RISE사업 1-2 원주] 철도 노반 보강에 따른 지반 안정성에 관한 시뮬레이션 및 평가"
+              - generic [ref=e1201]:
+                - generic [ref=e1202]:
+                  - generic [ref=e1203]:
+                    - generic [ref=e1204]: 적합도
+                    - generic [ref=e1205]: "20"
+                  - generic [ref=e1206]:
+                    - generic [ref=e1207]: 예산
+                    - generic [ref=e1208]: KRW 28000000
+                - generic [ref=e1209]: 미정
+            - link "No-go g2b(나라장터) 호원대학교 산학협력단 2026 국가유산 미디어아트 구 군산세관 본관 공연 연출 및 운영대행 용역 2026 국가유산 미디어아트 구 군산세관 본관 공연 연출 및 운영대행 용역 적합도 20 예산 KRW 130000000 미정" [ref=e1210] [cursor=pointer]:
+              - /url: /opportunities/g2b:R26BK01543220
+              - generic [ref=e1212]: No-go
+              - generic [ref=e1213]:
+                - generic [ref=e1214]:
+                  - generic [ref=e1215]: g2b(나라장터)
+                  - generic [ref=e1216]: 호원대학교 산학협력단
+                - heading "2026 국가유산 미디어아트 구 군산세관 본관 공연 연출 및 운영대행 용역" [level=4] [ref=e1217]
+                - paragraph [ref=e1218]: 2026 국가유산 미디어아트 구 군산세관 본관 공연 연출 및 운영대행 용역
+              - generic [ref=e1219]:
+                - generic [ref=e1220]:
+                  - generic [ref=e1221]:
+                    - generic [ref=e1222]: 적합도
+                    - generic [ref=e1223]: "20"
+                  - generic [ref=e1224]:
+                    - generic [ref=e1225]: 예산
+                    - generic [ref=e1226]: KRW 130000000
+                - generic [ref=e1227]: 미정
+  - region "Notifications (F8)":
+    - list

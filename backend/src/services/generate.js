@@ -45,8 +45,8 @@ const PROPOSAL_TOOL = {
   },
 };
 
-function buildPrompt(o) {
-  return `다음 공공 공고를 HyperCloud 관점에서 판단하고 ProposalPack을 작성하라.
+function buildPrompt(o, attachmentText) {
+  const base = `다음 공공 공고를 HyperCloud 관점에서 판단하고 ProposalPack을 작성하라.
 
 ${COMPANY_CONTEXT}
 
@@ -70,6 +70,19 @@ ${COMPANY_CONTEXT}
 - proposalMarkdown 섹션: 0.BD판단 / 1.사업이해 / 2.수행범위 / 3.수행적합성 / 4.리스크·확인필요 / 5.다음단계. (Watch면 "발주처 질의 초안" 추가)
 - slackMessage = 5줄 내외. confidence는 0~100 정수.
 - 반드시 emit_proposal_pack 도구를 호출해 결과를 출력한다.`;
+
+  // 첨부 본문(P1.5)이 있으면 컨텍스트에 추가 — 요구사항/평가기준/제출조건을 적극 반영.
+  if (attachmentText && attachmentText.trim()) {
+    const excerpt = attachmentText.slice(0, 12000);
+    return `${base}
+
+[첨부 문서 본문 발췌] (공고 첨부 파일에서 추출)
+${excerpt}
+
+- 위 첨부 본문의 요구사항·평가기준·제출조건·예산 정보를 proposalMarkdown과 brief에 적극 반영하라.
+- 첨부에서 확인된 구체 요구사항은 fitRationale/risks에 인용하라.`;
+  }
+  return base;
 }
 
 function isComplete(pack) {
@@ -88,7 +101,7 @@ function deterministicFallback(o) {
   return { ...m, modelUsed: 'deterministic-fallback', fallbackUsed: true };
 }
 
-export async function generateProposal(o) {
+export async function generateProposal(o, { attachmentText = null } = {}) {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
     return generateMock(o); // 키 없음 → mock (modelUsed:"mock")
@@ -106,7 +119,7 @@ export async function generateProposal(o) {
       max_tokens: 8192, // tool_use도 max_tokens에 잘림 → 넉넉히(§2)
       tools: [PROPOSAL_TOOL],
       tool_choice: { type: 'tool', name: 'emit_proposal_pack' },
-      messages: [{ role: 'user', content: buildPrompt(o) }],
+      messages: [{ role: 'user', content: buildPrompt(o, attachmentText) }],
     });
 
     // max_tokens로 잘렸으면 tool input이 중간에 끊겼을 수 있음 → fallback

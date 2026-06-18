@@ -9,13 +9,32 @@ import { todaySeoul } from './util/dates.js';
 const app = express();
 app.use(express.json({ limit: '1mb' }));
 
-// CORS(§4-7,13): 준비 중엔 * 허용 → published origin 확정 후 그 출처로 좁히기.
+// CORS(§4-7,13): 운영 출처(CORS_ORIGIN)는 정확히 허용 + Replit 미리보기(*.replit.dev) 허용.
 const corsOrigin = process.env.CORS_ORIGIN || '*';
-app.use(
-  cors({
-    origin: corsOrigin === '*' ? true : corsOrigin.split(',').map((s) => s.trim()),
-  })
-);
+if (corsOrigin === '*') {
+  app.use(cors({ origin: true }));
+} else {
+  const allowList = corsOrigin.split(',').map((s) => s.trim()).filter(Boolean);
+  // 개발/스테이징 미리보기(*.replit.dev)에서도 실데이터 확인 가능하게 서브도메인 허용.
+  const allowHostSuffixes = ['.replit.dev'];
+  app.use(
+    cors({
+      origin(origin, cb) {
+        if (!origin) return cb(null, true); // curl·서버사이드 등 origin 없는 요청 허용
+        if (allowList.includes(origin)) return cb(null, true);
+        try {
+          const host = new URL(origin).hostname;
+          if (allowHostSuffixes.some((suf) => host === suf.slice(1) || host.endsWith(suf))) {
+            return cb(null, true);
+          }
+        } catch {
+          /* 잘못된 origin은 차단 */
+        }
+        return cb(null, false);
+      },
+    })
+  );
+}
 
 // --- 헬스체크 ---
 app.get('/health', async (_req, res) => {

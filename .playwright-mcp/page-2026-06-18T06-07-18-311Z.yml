@@ -1,0 +1,59 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - generic [ref=e9]: Revenue Radar
+      - navigation [ref=e10]:
+        - link "대시보드" [ref=e11] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+          - text: 대시보드
+        - link "인박스" [ref=e17] [cursor=pointer]:
+          - /url: /inbox
+          - img [ref=e18]
+          - text: 인박스
+      - generic [ref=e21]:
+        - generic [ref=e22]: System Status
+        - generic [ref=e23]: 실제 API 연결됨
+    - generic [ref=e27]:
+      - banner [ref=e28]:
+        - heading "흩어진 공공 공고를 BD가 바로 실행할 수 있는 제안 패키지로 바꿉니다" [level=1] [ref=e30]
+      - main [ref=e31]:
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - heading "인박스" [level=2] [ref=e36]
+              - paragraph [ref=e37]: 모든 수집된 공고를 우선순위(적합도) 순으로 검토하세요.
+            - generic [ref=e39]:
+              - img [ref=e40]
+              - searchbox "공고명, 기관 검색..." [ref=e43]
+          - generic [ref=e44]:
+            - generic [ref=e45]:
+              - img [ref=e46]
+              - text: "필터:"
+            - generic [ref=e48]:
+              - button "●전체" [ref=e49]
+              - button "●Go" [ref=e50]
+              - button "●Watch" [active] [ref=e51]
+              - button "●No-go" [ref=e52]
+          - link "Watch K-Startup 민간 [경기테크노파크, 무료교육] 2026년 디지털 전환 실습 전문가 양성 교육 교육생 모집 (재)경기테크노파크가 주최하고 (주)그란코에서 주관하는 『2026년 디지털 전환 실습 전문가 양성 교육』을 소개합니다. 제조 현장에서는 데이터 수집, 공정 모니터링, 대시보드 구성, 3D 공정 시뮬레이션 등 디지털 전환 기술을 실제 업무에 적용할 수 있는 실무 역량의 중요성이 점차 높아지고 있습니다. 이에 제조 DX 핵심 기술을 실습 중심으로 학습하고, 현장에서 바로 활용 가능한 디지털 전환 실무 역량을 강화할 수 있도록 아래와 같은 교육 과정이 운영될 예정입니다. 적합도 40 예산 미정 D-15" [ref=e60] [cursor=pointer]:
+            - /url: /opportunities/kstartup:177718
+            - generic [ref=e62]: Watch
+            - generic [ref=e63]:
+              - generic [ref=e64]:
+                - generic [ref=e65]: K-Startup
+                - generic [ref=e66]: 민간
+              - heading "[경기테크노파크, 무료교육] 2026년 디지털 전환 실습 전문가 양성 교육 교육생 모집" [level=4] [ref=e67]
+              - paragraph [ref=e68]: (재)경기테크노파크가 주최하고 (주)그란코에서 주관하는 『2026년 디지털 전환 실습 전문가 양성 교육』을 소개합니다. 제조 현장에서는 데이터 수집, 공정 모니터링, 대시보드 구성, 3D 공정 시뮬레이션 등 디지털 전환 기술을 실제 업무에 적용할 수 있는 실무 역량의 중요성이 점차 높아지고 있습니다. 이에 제조 DX 핵심 기술을 실습 중심으로 학습하고, 현장에서 바로 활용 가능한 디지털 전환 실무 역량을 강화할 수 있도록 아래와 같은 교육 과정이 운영될 예정입니다.
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e72]: 적합도
+                  - generic [ref=e73]: "40"
+                - generic [ref=e74]:
+                  - generic [ref=e75]: 예산
+                  - generic [ref=e76]: 미정
+              - generic [ref=e77]: D-15
+  - region "Notifications (F8)":
+    - list

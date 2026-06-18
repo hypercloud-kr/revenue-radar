@@ -1,0 +1,83 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - generic [ref=e9]: Revenue Radar
+      - navigation [ref=e10]:
+        - link "대시보드" [ref=e11] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+          - text: 대시보드
+        - link "인박스" [ref=e17] [cursor=pointer]:
+          - /url: /inbox
+          - img [ref=e18]
+          - text: 인박스
+      - generic [ref=e21]:
+        - generic [ref=e22]: System Status
+        - generic [ref=e23]: 실제 API 연결됨
+    - generic [ref=e27]:
+      - banner [ref=e28]:
+        - heading "흩어진 공공 공고를 BD가 바로 실행할 수 있는 제안 패키지로 바꿉니다" [level=1] [ref=e30]
+      - main [ref=e31]:
+        - generic [ref=e654]:
+          - generic [ref=e655]:
+            - link "목록으로" [ref=e656] [cursor=pointer]:
+              - /url: /inbox
+              - img [ref=e657]
+              - text: 목록으로
+            - generic [ref=e659]: Go
+            - generic [ref=e660]: g2b(나라장터)
+          - generic [ref=e661]:
+            - generic [ref=e662]:
+              - generic [ref=e663]:
+                - generic [ref=e664]:
+                  - heading "(26F130-A) XR기반 실감형 콘텐츠 제작 용역" [level=1] [ref=e665]
+                  - generic [ref=e666]:
+                    - generic [ref=e668]: 국방부 국군재정관리단
+                    - generic [ref=e669]:
+                      - generic [ref=e670]: "예산:"
+                      - generic [ref=e671]: KRW 138399000
+                    - generic [ref=e672]:
+                      - generic [ref=e673]: "마감일:"
+                      - generic [ref=e674]: 2026-06-18 (D-Day)
+                    - link "원문 링크" [ref=e675] [cursor=pointer]:
+                      - /url: https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01548238&bidPbancOrd=000
+                      - text: 원문 링크
+                      - img [ref=e676]
+                - generic [ref=e680]:
+                  - button "분석 중..." [disabled]: 분석 중...
+              - generic [ref=e682]: (26F130-A) XR기반 실감형 콘텐츠 제작 용역
+            - generic [ref=e683]:
+              - generic [ref=e684]:
+                - heading "핵심 요구사항" [level=3] [ref=e685]:
+                  - img [ref=e686]
+                  - text: 핵심 요구사항
+                - list
+              - generic [ref=e690]:
+                - heading "당사 근거" [level=3] [ref=e691]:
+                  - img [ref=e692]
+                  - text: 당사 근거
+                - list [ref=e694]:
+                  - listitem [ref=e695]:
+                    - generic [ref=e696]: ✓
+                    - text: "직접 키워드 매칭: 실감형, 실감, XR"
+              - generic [ref=e697]:
+                - heading "리스크 / 누락 정보" [level=3] [ref=e698]:
+                  - img [ref=e699]
+                  - text: 리스크 / 누락 정보
+                - list [ref=e701]:
+                  - listitem [ref=e702]:
+                    - generic [ref=e703]: "!"
+                    - text: 마감 임박(D-7 이내)
+          - generic [ref=e704]:
+            - img [ref=e708]
+            - generic [ref=e711]: AI 제안 패키지 생성 중...
+            - generic [ref=e712]:
+              - generic [ref=e713]: 공고 요구사항 분석 중
+              - generic [ref=e714]: HyperCloud 적합성 판단 중
+              - generic [ref=e715]: 제안 초안 작성 중
+              - generic [ref=e716]: Slack·이메일 공유 문구 생성 중
+            - generic [ref=e717]: 이 작업은 약 40~60초가 소요될 수 있습니다.
+  - region "Notifications (F8)":
+    - list

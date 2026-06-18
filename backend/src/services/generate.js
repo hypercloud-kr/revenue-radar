@@ -97,7 +97,7 @@ export async function generateProposal(o) {
   const client = new Anthropic({
     apiKey,
     maxRetries: 0, // 재시도는 시간만 잡아먹음 — 복구는 fallback이 담당(§2)
-    timeout: 120000, // 90초+ (풀팩 실측 40~60초)
+    timeout: 90000, // 90초 — FE 대기(120초)보다 짧게 둬, 지연 시 fallback이 먼저 떠 FE가 무조건 응답 수신
   });
 
   try {
